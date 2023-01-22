@@ -5,7 +5,7 @@ const Joi = require("joi");
 
 const schema = new Schema({
   id: {
-    type: Number,
+    type: String,
     required: true,
   },
   color: {
@@ -21,7 +21,7 @@ const TemplateObject = model("tables", schema, "table");
 // Змінити схему joi
 
 const joi = Joi.object({
-  id: Joi.number().required(),
+  id: Joi.string().required(),
   color: Joi.string().required(),
 });
 

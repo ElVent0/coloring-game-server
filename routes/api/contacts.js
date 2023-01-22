@@ -17,8 +17,8 @@ const router = express.Router();
 
 router.get("/", wrapper(getAll));
 router.get("/:id", wrapper(getById));
-router.post("/", validator(joi), wrapper(add));
-router.delete("/:id", wrapper(removeById));
+// router.post("/", validator(joi), wrapper(add));
+// router.delete("/:id", wrapper(removeById));
 router.put("/:id", validator(joi), wrapper(updateById));
 // router.patch(
 //   "/:id/favorite",
