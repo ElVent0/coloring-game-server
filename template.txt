@@ -1,0 +1,12 @@
+.env ---------------------------
+
+PORT=3000
+
+# Змінити назву БД
+
+DB_HOST="mongodb+srv://admin:admin@first-claster.xgymppy.mongodb.net/coloring-game?retryWrites=true&w=majority"
+
+.gitignire ---------------------
+
+node_modules/
+.env
