@@ -9,6 +9,11 @@ const getAll = async (req, res) => {
   });
 };
 
+const getAllAuto = async (req, res) => {
+  const result = await TemplateObject.find({});
+  return result;
+};
+
 const getById = async (req, res) => {
   const { id } = req.params;
   console.log(id);
@@ -42,4 +47,5 @@ module.exports = {
   getAll,
   getById,
   updateById,
+  getAllAuto,
 };
